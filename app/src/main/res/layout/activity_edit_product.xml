@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditProductActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/mtb_main"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/mtb_main"
+        android:id="@+id/ll_header"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_add_photo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_photo"
+            android:contentDescription="@string/app_name"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="150dp"/>
+
+        <!-- Input-->
+
+        <!--EDIT USERNAME-->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/product_name"
+            android:textColor="@color/black"
+            android:inputType="textCapSentences"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:autofillHints="" />
+
+
+
+
+        <!--EDIT USERNAME-->
+        <EditText
+            android:id="@+id/et_unit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/unit"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:autofillHints="" />
+
+
+        <!--EDIT USERNAME-->
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/price"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:autofillHints=""
+            android:maxLength="10"/>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--EDIT USERNAME-->
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/et_expiration"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/date_of_expiry"
+                android:textColor="@color/black"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                android:autofillHints=""/>
+
+            <ImageView
+                android:id="@+id/iv_date"
+                android:layout_marginStart="2dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_date"
+                android:layout_width="60dp"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Input-->
+
+        <!--EDIT USERNAME-->
+        <EditText
+            android:id="@+id/et_avail_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/available_inventory"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:autofillHints=""
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <!--App Logo-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtn_cancel"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_toStartOf="@id/mbtn_update"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="5sp"/>
+
+    <!--App Logo-->
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/mbtn_update"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/purple_200"
+        app:cornerRadius="5sp" />
+
+
+
+</RelativeLayout>

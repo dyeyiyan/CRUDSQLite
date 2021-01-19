@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_display_photo"
+                android:src="@drawable/ic_image"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/app_name"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/product_name"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/tv_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/unit"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/price"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/tv_date_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/date_of_expiry"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/tv_available_inv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/available_inventory"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/tv_available_inv_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/available_inventory_cost"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_weight="1"
+                android:id="@+id/mbtn_delete"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:fontFamily="@font/roboto_medium"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:backgroundTint="@android:color/transparent"
+                app:cornerRadius="5sp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbtn_update"
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:fontFamily="@font/roboto_medium"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/purple_200"
+                app:cornerRadius="5sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+

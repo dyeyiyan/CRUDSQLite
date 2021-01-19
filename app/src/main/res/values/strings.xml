@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CRUDSQLite</string>
+    <string name="product_name">Product Name</string>
+    <string name="unit">Unit</string>
+    <string name="price">Price</string>
+    <string name="date_of_expiry">Date of Expiry</string>
+    <string name="available_inventory">Available Inventory</string>
+    <string name="available_inventory_cost">Available Inventory Cost</string>
+    <string name="string_available_inventory_cost" />
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+</resources>
